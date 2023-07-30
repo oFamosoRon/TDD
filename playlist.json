@@ -1,0 +1,79 @@
+{
+  "uuid": "b9862cae-30e2-4b49-a130-3e997f340002",
+  "lastMigration": 28,
+  "name": "Playlist",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "2ecb8603-4f6e-42c4-af9f-593cb99220ba",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "playlist",
+      "responses": [
+        {
+          "uuid": "0b572034-86df-4a2b-af49-42a2ac2b8460",
+          "body": "[\n  {\n    \"id\": \"1\",\n    \"name\": \"Hard Rock Cafe\",\n    \"category\": \"rock\"\n  },\n    {\n    \"id\": \"2\",\n    \"name\": \"Chilled House\",\n    \"category\": \"house\"\n  },\n    {\n    \"id\": \"3\",\n    \"name\": \"US TOP 40 HITS\",\n    \"category\": \"mixed\"\n  },\n    {\n    \"id\": \"4\",\n    \"name\": \"90's Rock\",\n    \"category\": \"rock\"\n  },\n    {\n    \"id\": \"5\",\n    \"name\": \"Purple Jazz\",\n    \"category\": \"jazz\"\n  },\n  {\n    \"id\": \"6\",\n    \"name\": \"90's flashback\",\n    \"category\": \"pop\"\n  },\n  {\n    \"id\": \"7\",\n    \"name\": \"Machine Funk\",\n    \"category\": \"electro\"\n  },\n  {\n    \"id\": \"8\",\n    \"name\": \"Let's Groove\",\n    \"category\": \"mixed\"\n  },\n  {\n    \"id\": \"9\",\n    \"name\": \"Feel The Beat\",\n    \"category\": \"electro\"\n  },\n  {\n    \"id\": \"10\",\n    \"name\": \"Best Songs 2020\",\n    \"category\": \"mixed\"\n  }\n ]\n",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "2ecb8603-4f6e-42c4-af9f-593cb99220ba"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}
